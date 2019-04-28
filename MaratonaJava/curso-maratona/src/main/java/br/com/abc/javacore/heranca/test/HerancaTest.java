@@ -6,8 +6,7 @@ import br.com.abc.javacore.heranca.classes.Pessoa;
 
 public class HerancaTest {
     public static void main(String[] args) {
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Carlos");
+        Pessoa pessoa = new Pessoa("Carlos");
         pessoa.setCpf("12345");
 
         Endereco endereco = new Endereco();
@@ -17,8 +16,7 @@ public class HerancaTest {
         pessoa.setEndereco(endereco);
         pessoa.imprime();
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Andre");
+        Funcionario funcionario = new Funcionario("Andre");
         funcionario.setCpf("123");
         funcionario.setSalario(2440);
         funcionario.setEndereco(endereco);
